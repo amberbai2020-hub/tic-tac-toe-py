@@ -38,6 +38,8 @@ Install package dependencies within the virtual environment:
 
 ```sh
 pip install -r requirements.txt
+
+#Asks the computer to install the packages that is listed in reuquirements.txt
 ```
 
 ## Player Types
@@ -71,6 +73,8 @@ python -m app.jobs.play_games
 
 # alternatively:
 GAME_COUNT=3 python -m app.jobs.play_games
+
+#Define environment variable number, type this line directly into the terminal along with -m app.jobs.play_game, to specify the number of games rounds that would be played.
 
 # alternatively:
 X_STRATEGY="COMPUTER-HARD" O_STRATEGY="COMPUTER-EASY" GAME_COUNT=100 python -m app.jobs.play_games

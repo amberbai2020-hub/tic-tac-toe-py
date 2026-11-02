@@ -4,11 +4,13 @@
 import os
 
 from pandas import DataFrame
+from dotenv import load_dotenv
 
 from app.game import Game
 from app.player import select_player
 from app.jobs.timer import Timer
 
+load_dotenv() #Checks the .env file for env variables so that the os module can use it
 X_STRATEGY = os.getenv("X_STRATEGY", default="RANDOM").upper()
 O_STRATEGY = os.getenv("O_STRATEGY", default="RANDOM").upper()
 

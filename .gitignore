@@ -1,4 +1,9 @@
+#This file lists files and folders that should be ignored from version control
+#and not checked-in or uploaded to GitHub
 
+#Ignore secret env variable from the ".env" file:
+.env
+#When in text editor, .env is grey, that means .env is no longer checked and will not update to GitHub
 
 # ignore some hidden files that appear on Mac OS:
 .DS_Store
